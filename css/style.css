@@ -10,12 +10,16 @@ html {
 
 body {
   font-family: var(--font-family);
-  color: var(--text);
+  color: var(--hint);
   font-size: 1.6rem;
 }
 
 p {
   margin: 1rem 0;
+}
+
+h1, h2 {
+  color: var(--text1);
 }
 
 h1,
@@ -32,7 +36,7 @@ ul {
 }
 
 a {
-  color: var(--text);
+  color: var(--text1);
   text-decoration: none;
 }
 
@@ -97,7 +101,7 @@ img {
 
 header {
   grid-area: header;
-  background: linear-gradient(to right, var(--primary), var(--light));
+  background: var(--background);
   padding: 10rem 5rem;
   text-align: center;
   color: white;
@@ -123,7 +127,8 @@ header h1 {
   }
 }
 header p {
-  font-size: 6rem;
+  color: var(--text1);
+  font-size: 5rem;
   letter-spacing: 0.5rem;
 }
 header span {
@@ -220,6 +225,7 @@ aside .block .social-container p {
 main {
   grid-area: main;
   padding: 5rem;
+  background: var(--background);
 }
 @media (max-width: 480px) {
   main {
@@ -268,9 +274,9 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--hint);
   padding: 5rem;
-  background: var(--text);
+  background: var(--background);
 }
 @media (max-width: 480px) {
   footer {
@@ -286,7 +292,7 @@ footer form {
 }
 footer form .prefix,
 footer form .postfix {
-  background: linear-gradient(to right, var(--dark), var(--light));
+  background: var(--text1);
   padding: 1rem 2rem;
   color: white;
   font-size: 2rem;

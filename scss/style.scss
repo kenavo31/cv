@@ -26,7 +26,7 @@
 
 header {
   grid-area: header;
-  background: linear-gradient(to right, var(--primary), var(--light));
+  background: var(--background);
   padding: 10rem 5rem;
   text-align: center;
   color: white;
@@ -47,7 +47,8 @@ header {
     }
   }
   p {
-    font-size: 6rem;
+    color: var(--text1);
+    font-size: 5rem;
     letter-spacing: 0.5rem;
   }
   span {
@@ -145,6 +146,7 @@ aside {
 main {
   grid-area: main;
   padding: 5rem;
+  background: var(--background);
   @include xs {
     padding: 5rem 1.5rem;
   }
@@ -191,12 +193,14 @@ footer {
   text-align: center;
   justify-content: center;
   align-items: center;
-  color: white;
+  
+  color: var(--hint);
   padding: 5rem;
   @include xs {
     padding: 5rem 1.5rem;
   }
-  background: var(--text);
+  background: var(--background);
+  // background: var(--text);
   h2 {
     margin-bottom: 3rem;
   }
@@ -205,7 +209,7 @@ footer {
     align-items: center;
     .prefix,
     .postfix {
-      background: linear-gradient(to right, var(--dark), var(--light));
+      background: var(--text1);
       padding: 1rem 2rem;
       color: white;
       font-size: 2rem;

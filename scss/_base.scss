@@ -4,12 +4,16 @@ html {
 
 body {
   font-family: var(--font-family);
-  color: var(--text);
+  color: var(--hint);
   font-size: 1.6rem;
 }
 
 p {
   margin: 1rem 0;
+}
+
+h1, h2 {
+  color: var(--text1);
 }
 
 h1,
@@ -26,7 +30,7 @@ ul {
 }
 
 a {
-  color: var(--text);
+  color: var(--text1);
   text-decoration: none;
 }
 

@@ -4,7 +4,9 @@
   --primary: #2071e7;
   --dark: #2980b9;
   --text: #333;
-  --background: #fafafa;
+  --text1: #F77C1E;
+  --background: black;
+  --background1: #fafafa;
   --hint: #999;
   --border: #ddd;
 }
